@@ -1,7 +1,7 @@
 package org.fasttrackit;
 
 /**
- * Hello world!
+ * Hello animalute!
  *
  */
 public class App 
@@ -39,11 +39,11 @@ public class App
         vet.specialization = "animalBehavior";
         vet.sex = "Male";
 
-        RecreationalActivity recreationalactivity = new RecreationalActivity();
-        recreationalactivity.sleep = "yes";
-        recreationalactivity.sleepTime = 10;
-        recreationalactivity.eat = Boolean.parseBoolean("true/false");
-        recreationalactivity.play = "yes";
+        RecreationalActivity recreationalActivity = new RecreationalActivity();
+        recreationalActivity.sleep = "yes";
+        recreationalActivity.sleepTime = 10;
+        recreationalActivity.eat = Boolean.parseBoolean("true/false");
+        recreationalActivity.play = "yes";
 
 
         Game game = new Game();
@@ -51,11 +51,25 @@ public class App
         game.dog = "run";
         game.vet = "kisses";
 
-        animal.game = game;
-
+        System.out.println( "Hello Animalute!" );
         System.out.println(animal.name);
         System.out.println(animal.game);
         System.out.println(adopter.sex);
+        System.out.println(animal.age);
+        System.out.println(animal.favoriteFood);
+        System.out.println(adopter.avaibleMoney);
+        System.out.println(animal.health);
+        System.out.println(adopter.name);
+        System.out.println(vet.name);
+        System.out.println(vet.experience);
+        System.out.println(vet.specialization);
+        System.out.println(food.foodType);
+        System.out.println(food.price);
+        System.out.println(recreationalActivity.sleepTime);
+        System.out.println(recreationalActivity.play);
+
+
+
 
 
 
@@ -90,11 +104,11 @@ public class App
         vet2.experience = "true";
         vet2.specialization = "animalWelfare";
 
-        RecreationalActivity recreationalactivity2 = new RecreationalActivity();
-        recreationalactivity2.sleep = "no";
-        recreationalactivity2.sleepTime = 0;
-        recreationalactivity2.eat = Boolean.parseBoolean("true");
-        recreationalactivity2.play = "yes";
+        RecreationalActivity recreationalActivity2 = new RecreationalActivity();
+        recreationalActivity2.sleep = "no";
+        recreationalActivity2.sleepTime = 0;
+        recreationalActivity2.eat = Boolean.parseBoolean("true");
+        recreationalActivity2.play = "yes";
 
         Game game2 = new Game();
         game2.adopter = "caressing";
@@ -106,20 +120,31 @@ public class App
 
 
 
+        System.out.println(animal2.game);
+        System.out.println(adopter2.sex);
+        System.out.println(animal2.age);
+        System.out.println(animal2.favoriteFood);
+        System.out.println(adopter2.avaibleMoney);
+        System.out.println(animal2.health);
+        System.out.println(adopter2.name);
+        System.out.println(vet2.name);
+        System.out.println(vet2.experience);
+        System.out.println(vet2.specialization);
+        System.out.println(food2.foodType);
+        System.out.println(food2.price);
+        System.out.println(recreationalActivity2.sleepTime);
+        System.out.println(recreationalActivity2.play);
+
+
+        System.out.println("animal2 name: " + animal2.name);
+        System.out.println("animal name: " + animal.name);
+        System.out.println("vet2 name: " + vet2.name);
+        System.out.println("vet1 name: " + vet.name);
+        System.out.println("adopter2 name: " + adopter2.name);
+        System.out.println("adopter1 name: " + adopter.name);
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-        System.out.println( "Hello World!" );
     }
 }
